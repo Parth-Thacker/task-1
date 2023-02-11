@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">This is heading</h1>
+         
+    <p id="P-node">This is paragraph node</p>
+    <div id="DivId">This is element Node</div>
+    <img src="" id="image" alt="attribute node">
+    <!-- this is comment node -->
+
+    <script>
+        const nodes = document.body.childNodes
+        console.log(nodes)
+        
+        const heading = document.getElementById("heading")
+        console.log(heading.nodeName)
+        console.log(heading.nodeType)
+        console.log(`node type of h1 is ${heading.nodeType}`)
+
+        const pNode = document.getElementById("P-node")
+        console.log(pNode.nodeName)
+        console.log(`node type of p is ${pNode.nodeType}`)
+
+        const div = document.getElementById("DivId")
+        console.log(div.nodeName)
+        console.log(`node type of div is ${div.nodeType}`)
+
+        const Image = document.getElementById("image")    
+        console.log(Image.nodeName)   
+        console.log(`node type of img is ${Image.nodeType}`)
+
+    </script>
+
+
+    
+</body>
+</html>
